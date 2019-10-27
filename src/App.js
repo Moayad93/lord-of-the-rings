@@ -2,11 +2,14 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+// Import Movie component
+import Movie from './Movie';
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        {/* <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -15,9 +18,12 @@ function App() {
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
-        >
+          >
           Learn React
-        </a>
+        </a> */}
+        <Movie title="The Fellowship of the Ring" hours="2" minutes="58"></Movie>
+        <Movie title="The Two Towers" hours="2" minutes="59"></Movie>
+        <Movie title="The Return of the King" hours="3" minutes="21"></Movie>
       </header>
     </div>
   );
